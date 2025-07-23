@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JS Example</title>
+    <style>
+        .colorChange {
+            color: orange ;
+            font-weight: bold;
+            border: 5px double black;
+            height: 90px;
+            width: 300px;
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">Hello World!</h1>
+    <button onclick="changeText()">Click to Change Text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Himanshu is here!";
+            document.getElementById("text").classList.add("colorChange");
+        }
+    </script>
+</body>
+</html>
